@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <div class="container bg-gray" style="text-align: left;">
+        <div class="py-5 text-center">
+
+            <h2 class="my-4 pt-2"><strong>Payment for Example</strong></h2>
+        </div>
+        <div class="container2">
+
+            <div class="row">
+                <div class="col">
+                    <div class="md-form md-outline">
+                        <div class="form-group"> <label for="cc-number" class="control-label">
+                                CARD NUMBER</label> <input id="cc-number" type="tel"
+                                class="input-lg form-control cc-number" autocomplete="cc-number"
+                                placeholder="•••• •••• •••• ••••" required>
+                        </div>
+
+
+
+                    </div>
+                    <div class="invalid-feedback">
+                        Name on card is required
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="cc-name">CVV</label>
+                        <label for="inputPassword2" class="sr-only">CVV</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="CVV">
+                    </div>
+                    <div class="invalid-feedback">
+                        Name on card is required
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-row">
+                        <label for="c2">Amount</label>
+                        <div class="input-group"> </span>
+                            <span class="input-group-addon">$</span>
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="input" name="inputName" placeholder="Amount"
+                                    value="" autocomplete="on" />
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="invalid-feedback">
+                        Name on card is required
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="row">
+                <div class="col">
+                    <div class="md-form md-outline">
+                        <label for="cc-name">First Name</label>
+                        <input type="text" id="cc-name" class="form-control" required>
+
+                    </div>
+                    <div class="invalid-feedback">
+                        Name on card is required
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="md-form md-outline">
+                        <label for="cc-name">Last Name</label>
+                        <input type="text" id="cc-name" class="form-control" required>
+
+                    </div>
+                    <div class="invalid-feedback">
+                        Credit card number is required
+                    </div>
+                </div>
+            </div>
+
+            <div class="container4">
+
+
+                <div class="row">
+                    <div class="col">
+                        <div class="md-form md-outline">
+                            <label for="cc-name">City</label>
+                            <input type="text" id="cc-name" class="form-control" required>
+
+                        </div>
+                        <div class="invalid-feedback">
+                            Name on card is required
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="md-form md-outline">
+                            <label for="state" class="col-sm-2 control-label">State</label>
+                            <input type="text" id="cc-name" class="form-control" required>
+
+                        </div>
+                        <div class="invalid-feedback">
+                            Name on card is required
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="md-form md-outline">
+                            <label for="cc-name">Postal Code</label>
+                            <input type="text" id="cc-name" class="form-control" required>
+
+                        </div>
+                        <div class="invalid-feedback">
+                            Name on card is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container5">
+                <div class="form-check form-check-inline">
+                    <small class="text-muted">We Accept: </small>
+                    <div class="form-check pl-0">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Credit card</label>
+                    </div>
+                    <div class="form-check pl-0">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Credit card</label>
+                    </div>
+                    <div class="form-check pl-0">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Credit card</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <small class="text-muted">Add any notes here</small>
+            </div>
+
+
+
+            <form name="CustomizationForm" id="CustomizationForm" class="needs-validation" novalidate autocomplete="on">
+                <div class="card">
+                    <div class="card-body"></div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingThree4">
+                            <button name="CreateConfig" class="btn waves-effect waves-light" id="CreateConfig"
+                                type="submit">
+                                Cancel</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></scrip >
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
