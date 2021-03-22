@@ -11,191 +11,181 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
-    <
+
     <script src="index.js"></script>
 </head>
 
 <body>
-    <div class="container"></div>
-    <div class="container bg-gray" style="text-align: left;">
-        <div class="py-5 text-center">
 
-            <h2 class="my-4 pt-2"><strong>Payment for Example</strong></h2>
-        </div>
-        <div class="container2">
+    <div id="error"></div>
+    <form id="form" action="/" method="GET">
+        <div class="container"></div>
+        <div class="container bg-gray" style="text-align: left;">
+            <div class="py-5 text-center">
+<h2 class="my-4 pt-2"><strong>Payment for Example</strong></h2></div>
 
-            <div class="row">
-                <div class="col">
-                    <div class="md-form md-outline">
-                        <div class="form-group"> <label for="cc-number" class="control-label">
-                                CARD NUMBER</label> <input id="cc-number1" type="tel"
-                                class="input-lg form-control cc-number" autocomplete="cc-number"
-                                placeholder="•••• •••• •••• ••••" required>
+
+            <div class="container2">
+            
+                <div class="row">
+                    <div class="col">
+                        <div class="md-form md-outline">
+                            <div class="form-group"> <label for="cc-number15" class="control-label">
+                                    CARD NUMBER</label> <input id="cc-number1" type="tel" class="input-lg form-control cc-number"
+                                    autocomplete="cc-number" placeholder="•••• •••• •••• ••••" required>
+                            </div>
                         </div>
-
-
-
+                        <div class="invalid-feedback">
+                            Name on card is required
+                        </div>
                     </div>
-                    <div class="invalid-feedback">
-                        Name on card is required
+
+
+
+
+                        <div class="col">
+                         <div class="md-form md-outline">
+                            <label for="cc-name2">CVV</label>
+                            <label for="inputPassword2" class="sr-only">CVV</label>
+                            <input type="tel" class="form-control" id="inputPassword2" placeholder="CVV" required>
+                        </div>
+                        <div class="invalid-feedback">
+                            Name on card is required
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-row">
+                            <label for="c2">Amount</label>
+                            <div class="input-group"> </span>
+                                <span class="input-group-addon">$</span>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" id="input" name="inputName"
+                                        placeholder="Amount" value="" autocomplete="on" required/>
+                                </div>
+                            </div>
+                                
+
+                        </div>
+                        <div class="invalid-feedback">
+                            Name on card is required
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="cc-name2">CVV</label>
-                        <label for="inputPassword2" class="sr-only">CVV</label>
-                        <input type="password" class="form-control" id="inputPassword2" placeholder="CVV">
+            </div>
+
+            <div class="container3">
+                <div class="row">
+                    <div class="col">
+                        <div class="md-form md-outline">
+                            <label for="cc-name3">First Name</label>
+                            <input type="text" id="cc-name4" class="form-control" required>
+
+                        </div>
+                        <div class="invalid-feedback">
+                            Name on card is required
+                        </div>
                     </div>
-                    <div class="invalid-feedback">
-                        Name on card is required
+
+                    <div class="col">
+                        <div class="md-form md-outline">
+                            <label for="cc-name5">Last Name</label>
+                            <input type="text" id="cc-name6" class="form-control" required>
+
+                        </div>
+                        <div class="invalid-feedback">
+                            Credit card number is required
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="form-row">
-                        <label for="c2">Amount</label>
-                        <div class="input-group"> </span>
-                            <span class="input-group-addon">$</span>
-                            <div class="form-group">
-                                <input class="form-control" type="text" id="input" name="inputName" placeholder="Amount"
-                                    value="" autocomplete="on" />
+
+                <div class="container4">
+
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="md-form md-outline">
+                                <label for="cc-name7">City</label>
+                                <input type="text" id="cc-name8" class="form-control" required>
+
+                            </div>
+                            <div class="invalid-feedback">
+                                Name on card is required
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="md-form md-outline">
+                                <label for="state" class="col-sm-2 control-label">State</label>
+                                <input type="text" id="cc-name9" class="form-control" required>
+
+                            </div>
+                            <div class="invalid-feedback">
+                                Name on card is required
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="md-form md-outline">
+                                <label for="cc-name10">Postal Code</label>
+                                <input type="text" id="cc-name11" class="form-control" required>
+
+                            </div>
+                            <div class="invalid-feedback">
+                                Name on card is required
                             </div>
                         </div>
 
 
-                    </div>
-                    <div class="invalid-feedback">
-                        Name on card is required
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="container3">
-            <div class="row">
-                <div class="col">
-                    <div class="md-form md-outline">
-                        <label for="cc-name3">First Name</label>
-                        <input type="text" id="cc-name4" class="form-control" required>
-
-                    </div>
-                    <div class="invalid-feedback">
-                        Name on card is required
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="md-form md-outline">
-                        <label for="cc-name5">Last Name</label>
-                        <input type="text" id="cc-name6" class="form-control" required>
-
-                    </div>
-                    <div class="invalid-feedback">
-                        Credit card number is required
-                    </div>
-                </div>
-            </div>
-
-            <div class="container4">
-
-
-                <div class="row">
-                    <div class="col">
-                        <div class="md-form md-outline">
-                            <label for="cc-name7">City</label>
-                            <input type="text" id="cc-name8" class="form-control" required>
-
-                        </div>
-                        <div class="invalid-feedback">
-                            Name on card is required
+                        <div class="form-check form-check-inline">
+                            <small class="text-muted">We Accept: </small>
+                            <div class="form-check pl-0">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" required
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Credit card</label>
+                            </div>
+                            <div class="form-check pl-0">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"required
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Credit card</label>
+                            </div>
+                            <div class="form-check pl-0">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"required
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio3">Credit card</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="md-form md-outline">
-                            <label for="state" class="col-sm-2 control-label">State</label>
-                            <input type="text" id="cc-name9" class="form-control" required>
 
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" required rows="3"></textarea >
+                        <small class="text-muted">Add any notes here</small>
+                    </div>
+
+
+                    <div>
+                        <form name="CustomizationForm" id="CustomizationForm" class="" novalidate autocomplete="off">
+                            <div class="card">
+
+                        <button name="CreateConfig" class="btn waves-effect waves-light" id="CreateConfig"type="submit">Cancel</button>
+                        <button type="submit" id=formSubmit class="btn btn-primary">Submit</button>
                         </div>
-                        <div class="invalid-feedback">
-                            Name on card is required
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="md-form md-outline">
-                            <label for="cc-name10">Postal Code</label>
-                            <input type="text" id="cc-name11" class="form-control" required>
-
-                        </div>
-                        <div class="invalid-feedback">
-                            Name on card is required
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container5">
-                <div class="form-check form-check-inline">
-                    <small class="text-muted">We Accept: </small>
-                    <div class="form-check pl-0">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Credit card</label>
-                    </div>
-                    <div class="form-check pl-0">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Credit card</label>
-                    </div>
-                    <div class="form-check pl-0">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Credit card</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <small class="text-muted">Add any notes here</small>
-            </div>
 
 
-            <div>
-            <form name="CustomizationForm" id="CustomizationForm" novalidate autocomplete="off"></form>
-                <div class="card">
-                   
                         
-                            <button name="CreateConfig" class="btn waves-effect waves-light" id="CreateConfig"
-                                type="submit">
-                                Cancel</button>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-
-        </div>
-    </div>
-    </div>
-
-    </div>
-
-    <script src="index.js">
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></scrip >
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+                        <script src="index.js">
+                        </script>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></scrip >
+                                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                                    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                                    crossorigin="anonymous"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                            crossorigin="anonymous"></script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                            crossorigin="anonymous"></script>
+                        </form>
 </body>
-<script src="index.js"></script>
+
 </html>

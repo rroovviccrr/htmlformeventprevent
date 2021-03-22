@@ -1,7 +1,4 @@
-const form = document.getElementsById("card");
-form.addEventListener("submit", function(event){
-event.preventDefault();
-console.log(event)
+formSubmit.addEventListener("click", function(event){
 
-}
-)
+    event.preventDefault();
+});
